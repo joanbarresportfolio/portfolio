@@ -7,7 +7,7 @@ const Hero = () => {
       
       {/* Imagen de perfil */}
       <div className="mb-10">
-        <div className="rounded-full border-4 border-purple-600 p-1 shadow-xl">
+        <div className="rounded-full border-4 bg-purple-900 p-1 shadow-xl">
           <img
             src={portrait}
             alt="Joan Barres"
@@ -19,7 +19,7 @@ const Hero = () => {
       {/* Texto de presentación */}
       <div className="max-w-3xl">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6">
-          Hi, I'm <span className="text-purple-600">Joan Barres</span>
+          Hi, I'm <span className="text-purple-900">Joan Barres</span>
         </h1>
         <p className="text-lg text-white mb-6">
           I'm a passionate web developer focused on building fast, clean, and fully responsive websites and applications.

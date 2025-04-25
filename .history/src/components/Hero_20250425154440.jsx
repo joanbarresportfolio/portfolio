@@ -3,7 +3,7 @@ import portrait from '../assets/face_co.png';
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center justify-center px-6 lg:px-20 py-16 bg-gray-900 text-center">
+    <section className="flex flex-col items-center justify-center px-6 lg:px-20 py-16 bg-black text-center">
       
       {/* Imagen de perfil */}
       <div className="mb-10">
@@ -21,7 +21,7 @@ const Hero = () => {
         <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6">
           Hi, I'm <span className="text-purple-600">Joan Barres</span>
         </h1>
-        <p className="text-lg text-white mb-6">
+        <p className="text-lg text-gray-600 mb-6">
           I'm a passionate web developer focused on building fast, clean, and fully responsive websites and applications.
           I love transforming ideas into digital solutions, combining creativity with strong technical skills.
           Let's collaborate and create something amazing together!

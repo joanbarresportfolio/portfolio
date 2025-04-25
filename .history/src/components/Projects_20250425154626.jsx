@@ -47,7 +47,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center justify-center px-6 lg:px-20 py-16 bg-purple-900 text-white">
+    <section className="flex flex-col items-center justify-center px-6 lg:px-20 py-16 bg-purple-800 text-white">
       
       {/* Título */}
       <div className="text-center mb-12">

@@ -25,16 +25,17 @@ const About = () => {
         </div>
 
         {/* Formación y experiencia */}
-        <div className="flex flex-col items-start text-left">
-          <h2 className="text-2xl font-bold text-purple-600 mb-4">Education & Experience</h2>
-          <p className="text-white text-base mb-2">
-            I have studied two years of a university degree and completed two higher education degrees. 
-            Additionally, I have taken multiple online specialization courses focused on web development and cybersecurity.
-          </p>
-          <p className="text-white text-base">
-            This diverse training has provided me with a strong technical foundation and a versatile skill set for tackling modern digital challenges.
-          </p>
-        </div>
+{/* Formación y experiencia */}
+<div className="flex flex-col items-start text-left">
+  <h2 className="text-2xl font-bold text-purple-600 mb-4">Education & Experience</h2>
+  <p className="text-white text-base mb-2">
+    I have studied two years of a university degree and completed two higher education degrees. 
+    Additionally, I have taken multiple online specialization courses focused on web development and cybersecurity.
+  </p>
+  <p className="text-white text-base">
+    This diverse training has provided me with a strong technical foundation and a versatile skill set for tackling modern digital challenges.
+  </p>
+</div>
 
         {/* Habilidades principales */}
         <div className="flex flex-col items-start text-left">

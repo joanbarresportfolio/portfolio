@@ -61,9 +61,9 @@ const Projects = () => {
       {/* Grid de proyectos */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col items-center text-center p-6">
+          <div key={index} className="bg-gray-900 rounded-lg overflow-hidden shadow-md flex flex-col items-center text-center p-6">
             <img src={project.img} alt={project.title} className="w-full h-40 object-contain mb-4" />
-            <h2 className="text-xl font-semibold text-purple-700 mb-2">{project.title}</h2>
+            <h2 className="text-xl font-semibold text-white mb-2">{project.title}</h2>
             <p className="text-gray-700 mb-4">{project.description}</p>
             <a href={project.link} className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">
               View Project

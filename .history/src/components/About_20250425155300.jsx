@@ -18,7 +18,7 @@ const About = () => {
         {/* Historia Personal */}
         <div className="flex flex-col items-start text-left">
           <h2 className="text-2xl font-bold text-purple-600 mb-4">My Story</h2>
-          <p className="text-white text-base">
+          <p className="text-gray-700 text-base">
             I discovered my passion for technology when I built my first website as a teenager. 
             The creativity and logic behind coding immediately hooked me, leading me to dive deeper into web development.
           </p>
@@ -27,25 +27,25 @@ const About = () => {
         {/* Formación y experiencia */}
         <div className="flex flex-col items-start text-left">
           <h2 className="text-2xl font-bold text-purple-600 mb-4">Education & Experience</h2>
-          <p className="text-white text-base mb-2">
-            I have studied two years of a university degree and completed two higher education degrees. 
-            Additionally, I have taken multiple online specialization courses focused on web development and cybersecurity.
+          <p className="text-gray-700 text-base mb-2">
+            I studied Computer Science at university and later completed a Full Stack Development Bootcamp. 
+            Along the way, I worked on freelance projects, personal startups, and contributed to open-source initiatives.
           </p>
-          <p className="text-white text-base">
-            This diverse training has provided me with a strong technical foundation and a versatile skill set for tackling modern digital challenges.
+          <p className="text-gray-700 text-base">
+            These experiences helped me build solid skills in both frontend and backend development.
           </p>
         </div>
 
         {/* Habilidades principales */}
         <div className="flex flex-col items-start text-left">
           <h2 className="text-2xl font-bold text-purple-600 mb-4">Skills</h2>
-          <p className="text-white text-base mb-2">
+          <p className="text-gray-700 text-base mb-2">
             <strong>Frontend:</strong> React.js, Tailwind CSS, Next.js
           </p>
-          <p className="text-white text-base mb-2">
+          <p className="text-gray-700 text-base mb-2">
             <strong>Backend:</strong> Node.js, Express, MongoDB, MySQL
           </p>
-          <p className="text-white text-base mb-2">
+          <p className="text-gray-700 text-base mb-2">
             <strong>Soft Skills:</strong> Communication, teamwork, adaptability, and problem-solving
           </p>
         </div>

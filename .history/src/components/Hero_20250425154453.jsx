@@ -3,7 +3,7 @@ import portrait from '../assets/face_co.png';
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center justify-center px-6 lg:px-20 py-16 bg-gray-900 text-center">
+    <section className="flex flex-col items-center justify-center px-6 lg:px-20 py-16 bg-black text-center">
       
       {/* Imagen de perfil */}
       <div className="mb-10">
