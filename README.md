@@ -1,12 +1,32 @@
-# React + Vite
+# 💼 joanbarresportfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el **portfolio personal** de [Joan Barrés](mailto:joanbarresportfolio@gmail.com), un desarrollador web y multiplataforma apasionado por la creación de soluciones digitales modernas y funcionales.
 
-Currently, two official plugins are available:
+Este sitio web tiene como objetivo mostrar de forma clara y visual todos los proyectos creados por Joan, permitiendo al visitante navegar entre ellos, acceder a su código fuente y probar las demos en vivo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://reactjs.org/) – Librería principal para construir la interfaz
+- [Vite](https://vitejs.dev/) – Empaquetador rápido y ligero
+- [Tailwind CSS](https://tailwindcss.com/) – Framework de estilos para un diseño limpio y responsive
+- [Framer Motion](https://www.framer.com/motion/) – Animaciones fluidas y modernas (a integrar próximamente)
+- [GitHub Pages / Vercel / Netlify] – Plataforma de despliegue (a definir)
+
+---
+
+## 📁 Estructura inicial del proyecto
+
+```bash
+joanbarresportfolio/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   └── App.jsx
+├── .gitignore
+├── README.md
+├── index.html
+└── package.json
