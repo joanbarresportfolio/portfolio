@@ -38,6 +38,12 @@ const projects = [
     link: '#'
   },
   {
+    img: hibernate,
+    title: 'Hibernate',
+    description: 'Accdes Data with hibernate',
+    link: '#'
+  },
+  {
     img: kotlin,
     title: 'Kotlin',
     description: 'Develop mobile software with kotlin',

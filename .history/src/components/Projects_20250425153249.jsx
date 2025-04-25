@@ -2,10 +2,7 @@ import React from 'react';
 import flutter from '../assets/flutter.jpg';
 import laravel from '../assets/laravel.png';
 import odoo from '../assets/odoo.png';
-import node from '../assets/node.jpg';
-import hibernate from '../assets/hibernate.jpg';
-import kotlin from '../assets/kotlin.jpg'
-
+import node from '../assets/node.png';
 const projects = [
   {
     img: flutter,
@@ -26,21 +23,27 @@ const projects = [
     link: '#'
   },
   {
+    img: flutter,
+    title: 'Second Flutter Project',
+    description: 'An advanced Flutter app with Firebase integration.',
+    link: '#'
+  },
+  {
+    img: laravel,
+    title: 'Laravel Admin Panel',
+    description: 'A full-featured admin dashboard built with Laravel.',
+    link: '#'
+  },
+  {
+    img: odoo,
+    title: 'Odoo Customization',
+    description: 'Tailor-made solutions based on Odoo platform.',
+    link: '#'
+  },
+  {
     img: node,
     title: 'Node projects',
     description: 'Web server apps with nodejs',
-    link: '#'
-  },
-  {
-    img: hibernate,
-    title: 'Hibernate',
-    description: 'Accdes Data with hibernate',
-    link: '#'
-  },
-  {
-    img: kotlin,
-    title: 'Kotlin',
-    description: 'Develop mobile software with kotlin',
     link: '#'
   }
 ];

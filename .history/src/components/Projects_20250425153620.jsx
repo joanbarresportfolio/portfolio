@@ -3,9 +3,6 @@ import flutter from '../assets/flutter.jpg';
 import laravel from '../assets/laravel.png';
 import odoo from '../assets/odoo.png';
 import node from '../assets/node.jpg';
-import hibernate from '../assets/hibernate.jpg';
-import kotlin from '../assets/kotlin.jpg'
-
 const projects = [
   {
     img: flutter,
@@ -29,18 +26,6 @@ const projects = [
     img: node,
     title: 'Node projects',
     description: 'Web server apps with nodejs',
-    link: '#'
-  },
-  {
-    img: hibernate,
-    title: 'Hibernate',
-    description: 'Accdes Data with hibernate',
-    link: '#'
-  },
-  {
-    img: kotlin,
-    title: 'Kotlin',
-    description: 'Develop mobile software with kotlin',
     link: '#'
   }
 ];
