@@ -37,11 +37,11 @@ const Navbar = () => {
 
       {/* Menú desplegable para móviles */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 shadow-lg px-4 py-4 space-y-4 list-none">
-          <li onClick={closeMenu} className="hover:text-gray-500 cursor-pointer">Home</li>
-          <li onClick={closeMenu} className="hover:text-gray-500 cursor-pointer">Projects</li>
-          <li onClick={closeMenu} className="hover:text-gray-500 cursor-pointer">About</li>
-          <li onClick={closeMenu} className="hover:text-gray-500 cursor-pointer">Contact</li>
+        <div className="md:hidden bg-white border-t border-gray-200 shadow-lg px-4 py-4 space-y-4">
+          <li onClick={closeMenu} className="hover:text-purple-600 cursor-pointer">Home</li>
+          <li onClick={closeMenu} className="hover:text-purple-600 cursor-pointer">Projects</li>
+          <li onClick={closeMenu} className="hover:text-purple-600 cursor-pointer">About</li>
+          <li onClick={closeMenu} className="hover:text-purple-600 cursor-pointer">Contact</li>
         </div>
       )}
     </nav>

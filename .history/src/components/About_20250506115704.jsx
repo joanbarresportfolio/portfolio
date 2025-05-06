@@ -131,7 +131,7 @@ const About = () => {
         >
           <h2 className="text-2xl font-bold mb-16 text-center">Tools & Technologies</h2>
           <motion.div
-            className="grid grid-cols-3 gap-6 justify-items-center items-center text-gray-700 "
+            className="grid grid-cols-3 gap-6 justify-items-center items-center text-gray-700 ml-5"
             initial="hidden"
             whileInView="visible"
             variants={{
