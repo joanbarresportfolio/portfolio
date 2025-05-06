@@ -7,7 +7,7 @@ import {
   SiNodedotjs, SiTailwindcss, SiJavascript, SiGit, SiGithub
 } from "react-icons/si";
 
-// Animation variants
+// Variantes de animación
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
   visible: (i = 0) => ({
@@ -20,7 +20,7 @@ const fadeUp = {
 const About = () => {
   return (
     <section className="bg-white px-6 lg:px-20 py-16 text-gray-800">
-      {/* Section Title */}
+      {/* Título principal */}
       <motion.div
         className="text-center mb-12"
         variants={fadeUp}
@@ -33,7 +33,7 @@ const About = () => {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        {/* Personal Background */}
+        {/* Historia */}
         <motion.div
           className="p-6 h-full"
           custom={1}
@@ -42,19 +42,19 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold mb-10 text-center">Background</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">Historia</h2>
           <p className="text-base mb-4">
-            I am a web application developer experienced in modern technologies such as HTML, CSS, JavaScript, React, and Angular. During my time at Mahico SL, I actively contributed to creating responsive and functional websites, as well as providing technical support for both hardware and software.
+            Soy un desarrollador de aplicaciones web con experiencia en tecnologías modernas como HTML, CSS, JavaScript, React y Angular. Durante mi tiempo en Mahico SL, participé activamente en la creación de sitios web responsivos y funcionales, además de brindar soporte técnico en hardware y software.
           </p>
           <p className="text-base mb-4">
-            I’ve worked with SQL and NoSQL databases and have strong backend development knowledge using PHP, Laravel, and Node.js. I also have experience building mobile apps with Flutter and Dart.
+            He trabajado con bases de datos SQL y NoSQL, y tengo conocimientos sólidos en el desarrollo backend con PHP, Laravel y Node.js. También tengo experiencia desarrollando apps móviles con Flutter y Dart.
           </p>
           <p className="text-base">
-            I am currently expanding my knowledge in cybersecurity and cross-platform development. I consider myself a curious person with a passion for technology and a constant desire to learn and apply new tools.
+            Actualmente estoy ampliando mi formación en ciberseguridad y desarrollo de aplicaciones multiplataforma. Me considero una persona curiosa, con pasión por la tecnología y en constante búsqueda de aprender y aplicar nuevas herramientas.
           </p>
         </motion.div>
 
-        {/* Education and Experience */}
+        {/* Educación y experiencia */}
         <motion.div
           className="p-6 h-full"
           custom={2}
@@ -63,26 +63,27 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold mb-10 text-center">Education & Experience</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">Educación y Experiencia</h2>
           <div className="mb-4">
-            <p className="font-semibold">Computer Engineering Studies (unfinished)</p>
-            <p className="text-sm text-gray-600">Polytechnic University of Valencia • 2020 – 2022</p>
+            <p className="font-semibold">Estudios de Ingeniería Informática (no finalizados)</p>
+            <p className="text-sm text-gray-600">Universidad Politécnica de Valencia • 2020 – 2022</p>
           </div>
           <div className="mb-4">
-            <p className="font-semibold">Higher Technician in Web Application Development</p>
+            <p className="font-semibold">Grado Técnico Superior en Desarrollo de Aplicaciones Web</p>
             <p className="text-sm text-gray-600">IES Maria Enriquez II • 2022 – 2023</p>
           </div>
           <div className="mb-4">
-            <p className="font-semibold">Cybersecurity Specialization Course</p>
+            <p className="font-semibold">Curso Especialización de Ciberseguridad</p>
             <p className="text-sm text-gray-600">IES Jaume II el Just • 2023 – 2024</p>
           </div>
           <div className="mb-4">
-            <p className="font-semibold">Higher Technician in Cross-platform Application Development</p>
+            <p className="font-semibold">Grado Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</p>
             <p className="text-sm text-gray-600">IES Maria Enriquez II • 2024 – 2025</p>
           </div>
+
         </motion.div>
 
-        {/* Skills */}
+        {/* Habilidades */}
         <motion.div
           className="p-6 h-full"
           custom={3}
@@ -91,13 +92,13 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold mb-10 text-center">Skills</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">Habilidades</h2>
           {[
             { name: 'Frontend (HTML, CSS, JS, React, Angular)', percent: 90 },
             { name: 'Backend (PHP, Laravel, Node.js)', percent: 80 },
-            { name: 'Databases (SQL, NoSQL)', percent: 85 },
-            { name: 'Mobile Development (Flutter, Dart)', percent: 75 },
-            { name: 'Cybersecurity & Systems', percent: 70 },
+            { name: 'Bases de datos (SQL, NoSQL)', percent: 85 },
+            { name: 'Desarrollo móvil (Flutter, Dart)', percent: 75 },
+            { name: 'Ciberseguridad y sistemas', percent: 70 },
           ].map((skill, index) => (
             <motion.div
               key={index}
@@ -121,7 +122,7 @@ const About = () => {
           ))}
         </motion.div>
 
-        {/* Tools & Technologies */}
+        {/* Herramientas y tecnologías */}
         <motion.div
           className="p-6 h-full"
           custom={4}
@@ -130,7 +131,7 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold mb-16 text-center">Technologies</h2>
+          <h2 className="text-2xl font-bold mb-16 text-center">Tecnologías</h2>
           <motion.div
             className="grid grid-cols-3 gap-6 justify-items-center items-center text-gray-700"
             initial="hidden"

@@ -34,14 +34,14 @@ const Hero = () => {
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
           Hi, I'm Joan Barres
         </h1>
-        <p className="text-lg mt-3 text-base text-gray-600 mb-10">
+        <p className="text-lg mt-3 text-base text-gray-600 mb-6">
           I'm a passionate web developer focused on building fast, clean, and fully responsive websites and applications.
           I love transforming ideas into digital solutions, combining creativity with strong technical skills.
           Let's collaborate and create something amazing together!
         </p>
         <a 
           href="#projects"
-          className="border border-gray-300 bg-white text-black text-md font-medium px-6 py-4 rounded hover:bg-gray-600 hover:text-white transition"
+          className="border border-gray-300 bg-white text-black text-sm font-medium px-6 py-4 rounded hover:bg-gray-600 hover:text-white transition"
         >
           Contact me
         </a>

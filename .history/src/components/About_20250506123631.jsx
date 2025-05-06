@@ -1,13 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { DiJava } from "react-icons/di";
 import {
-  SiReact, SiAngular, SiLaravel, SiPhp, SiFlutter, SiDart,
-  SiHibernate, SiMongodb, SiMysql, SiPostgresql, SiSass, SiVite, SiOdoo,
-  SiNodedotjs, SiTailwindcss, SiJavascript, SiGit, SiGithub
+  SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiTypescript,
+  SiJavascript, SiMongodb, SiGit, SiGithub
 } from "react-icons/si";
 
-// Animation variants
+// Variantes de animación
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
   visible: (i = 0) => ({
@@ -20,7 +18,7 @@ const fadeUp = {
 const About = () => {
   return (
     <section className="bg-white px-6 lg:px-20 py-16 text-gray-800">
-      {/* Section Title */}
+      {/* Título principal */}
       <motion.div
         className="text-center mb-12"
         variants={fadeUp}
@@ -33,7 +31,7 @@ const About = () => {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        {/* Personal Background */}
+        {/* About Me */}
         <motion.div
           className="p-6 h-full"
           custom={1}
@@ -42,19 +40,21 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold mb-10 text-center">Background</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">History</h2>
           <p className="text-base mb-4">
-            I am a web application developer experienced in modern technologies such as HTML, CSS, JavaScript, React, and Angular. During my time at Mahico SL, I actively contributed to creating responsive and functional websites, as well as providing technical support for both hardware and software.
+            I'm a passionate full-stack developer with 5+ years of experience building web applications.
+            I specialize in JavaScript-based technologies and have a strong background in creating responsive, accessible, and performant web experiences.
           </p>
           <p className="text-base mb-4">
-            I’ve worked with SQL and NoSQL databases and have strong backend development knowledge using PHP, Laravel, and Node.js. I also have experience building mobile apps with Flutter and Dart.
+            After graduating with a degree in Computer Science, I started my career at a startup where I developed a passion for clean code and user-centered design.
+            I've worked with companies of all sizes, from startups to large enterprises, helping them build products users love.
           </p>
           <p className="text-base">
-            I am currently expanding my knowledge in cybersecurity and cross-platform development. I consider myself a curious person with a passion for technology and a constant desire to learn and apply new tools.
+            I believe in continuous learning. When I'm not coding, I enjoy hiking, reading tech blogs, or contributing to open-source projects.
           </p>
         </motion.div>
 
-        {/* Education and Experience */}
+        {/* Education & Experience */}
         <motion.div
           className="p-6 h-full"
           custom={2}
@@ -65,20 +65,19 @@ const About = () => {
         >
           <h2 className="text-2xl font-bold mb-10 text-center">Education & Experience</h2>
           <div className="mb-4">
-            <p className="font-semibold">Computer Engineering Studies (unfinished)</p>
-            <p className="text-sm text-gray-600">Polytechnic University of Valencia • 2020 – 2022</p>
+            <p className="font-semibold">Senior Frontend Developer</p>
+            <p className="text-sm text-gray-600">TechCorp Inc • 2020 - Present</p>
+            <p className="text-sm">Leading frontend development and mentoring junior developers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptate..</p>
           </div>
           <div className="mb-4">
-            <p className="font-semibold">Higher Technician in Web Application Development</p>
-            <p className="text-sm text-gray-600">IES Maria Enriquez II • 2022 – 2023</p>
+            <p className="font-semibold">Web Developer</p>
+            <p className="text-sm text-gray-600">Innovative Solutions • 2018 - 2020</p>
+            <p className="text-sm">Worked on React, Node.js and MongoDB-based applications. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nemo.</p>
           </div>
-          <div className="mb-4">
-            <p className="font-semibold">Cybersecurity Specialization Course</p>
-            <p className="text-sm text-gray-600">IES Jaume II el Just • 2023 – 2024</p>
-          </div>
-          <div className="mb-4">
-            <p className="font-semibold">Higher Technician in Cross-platform Application Development</p>
-            <p className="text-sm text-gray-600">IES Maria Enriquez II • 2024 – 2025</p>
+          <div>
+            <p className="font-semibold">BSc in Computer Science</p>
+            <p className="text-sm text-gray-600">Tech University • 2014 - 2018</p>
+            <p className="text-sm">Graduated with honors in web technologies and software engineering.</p>
           </div>
         </motion.div>
 
@@ -93,11 +92,11 @@ const About = () => {
         >
           <h2 className="text-2xl font-bold mb-10 text-center">Skills</h2>
           {[
-            { name: 'Frontend (HTML, CSS, JS, React, Angular)', percent: 90 },
-            { name: 'Backend (PHP, Laravel, Node.js)', percent: 80 },
-            { name: 'Databases (SQL, NoSQL)', percent: 85 },
-            { name: 'Mobile Development (Flutter, Dart)', percent: 75 },
-            { name: 'Cybersecurity & Systems', percent: 70 },
+            { name: 'Frontend Development', percent: 95 },
+            { name: 'Backend Development', percent: 85 },
+            { name: 'UI/UX Design', percent: 80 },
+            { name: 'Database Management', percent: 75 },
+            { name: 'DevOps', percent: 70 },
           ].map((skill, index) => (
             <motion.div
               key={index}
@@ -130,9 +129,9 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold mb-16 text-center">Technologies</h2>
+          <h2 className="text-2xl font-bold mb-16 text-center">Tools & Technologies</h2>
           <motion.div
-            className="grid grid-cols-3 gap-6 justify-items-center items-center text-gray-700"
+            className="grid grid-cols-3 gap-6 justify-items-center items-center text-gray-700 "
             initial="hidden"
             whileInView="visible"
             variants={{
@@ -145,18 +144,15 @@ const About = () => {
             viewport={{ once: true }}
           >
             {[
-              { icon: <SiReact />, label: 'React' },
-              { icon: <SiLaravel />, label: 'Laravel' },
-              { icon: <SiPhp />, label: 'PHP' },
-              { icon: <SiFlutter />, label: 'Flutter' },
-              { icon: <SiHibernate />, label: 'Hibernate' },
-              { icon: <SiMongodb />, label: 'MongoDB' },
-              { icon: <SiMysql />, label: 'MySQL' },
-              { icon: <SiOdoo />, label: 'Odoo' },
-              { icon: <SiNodedotjs />, label: 'NodeJs' },
+              { icon: <SiReact/>, label: 'React.js' },
+              { icon: <SiNextdotjs />, label: 'Next.js' },
               { icon: <SiTailwindcss />, label: 'Tailwind' },
-              { icon: <SiJavascript />, label: 'JavaScript' },
-              { icon: <SiGithub />, label: 'GitHub' },
+              { icon: <SiNodedotjs />, label: 'Node.js' },
+              { icon: <SiTypescript className="text-blue-700" />, label: 'TypeScript' },
+              { icon: <SiJavascript className="text-yellow-400" />, label: 'JavaScript' },
+              { icon: <SiMongodb className="text-green-700" />, label: 'MongoDB' },
+              { icon: <SiGit className="text-orange-500" />, label: 'Git' },
+              { icon: <SiGithub className="text-black" />, label: 'GitHub' },
             ].map((tool, index) => (
               <motion.div
                 key={index}
@@ -165,7 +161,7 @@ const About = () => {
                 custom={index * 0.1}
               >
                 {tool.icon}
-                <span className="mt-1 text-xs text-center">{tool.label}</span>
+                <span className="mt-1 text-xs">{tool.label}</span>
               </motion.div>
             ))}
           </motion.div>
