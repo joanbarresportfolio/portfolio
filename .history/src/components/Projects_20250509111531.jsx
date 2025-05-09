@@ -16,7 +16,7 @@ const projects = [
     description: 'A cross-platform mobile app built with Flutter.',
     tags: ['Flutter', 'Dart'],
     github: 'https://github.com/joanbarresportfolio/pokedex_flutter.git',
-    website: 'https://joanbarresportfolio.github.io/pokedex_flutter/'
+    website: 'https://your-flutter-app.com'
   },
   {
     img: laravel,

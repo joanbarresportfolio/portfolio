@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiExternalLink, FiGithub } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import flutter from '../assets/1.jpg';
 import laravel from '../assets/2.jpg';
@@ -15,8 +15,7 @@ const projects = [
     title: 'Flutter App',
     description: 'A cross-platform mobile app built with Flutter.',
     tags: ['Flutter', 'Dart'],
-    github: 'https://github.com/joanbarresportfolio/pokedex_flutter.git',
-    website: 'https://joanbarresportfolio.github.io/pokedex_flutter/'
+    link: 'https://github.com/joanbarresportfolio/pokedex_flutter.git'
   },
   {
     img: laravel,
@@ -24,8 +23,7 @@ const projects = [
     title: 'Laravel Website',
     description: 'A modern web application developed using Laravel.',
     tags: ['Laravel', 'PHP', 'MySQL'],
-    github: 'https://github.com/youruser/laravel-project',
-    website: 'https://your-laravel-site.com'
+    link: '#'
   },
   {
     img: odoo,
@@ -33,8 +31,7 @@ const projects = [
     title: 'Odoo Integration',
     description: 'Custom modules and integrations with Odoo ERP.',
     tags: ['Odoo', 'Python'],
-    github: 'https://github.com/youruser/odoo-project',
-    website: 'https://your-odoo-instance.com'
+    link: '#'
   },
   {
     img: node,
@@ -42,8 +39,7 @@ const projects = [
     title: 'Node Projects',
     description: 'Web server apps with Node.js.',
     tags: ['Node.js', 'Express'],
-    github: 'https://github.com/youruser/node-project',
-    website: 'https://your-node-app.com'
+    link: '#'
   },
   {
     img: hibernate,
@@ -51,8 +47,7 @@ const projects = [
     title: 'Hibernate',
     description: 'Access data using Hibernate ORM.',
     tags: ['Hibernate', 'Java', 'SQL'],
-    github: 'https://github.com/youruser/hibernate-project',
-    website: 'https://your-hibernate-site.com'
+    link: '#'
   },
   {
     img: kotlin,
@@ -60,14 +55,14 @@ const projects = [
     title: 'Kotlin App',
     description: 'Develop mobile software with Kotlin.',
     tags: ['Kotlin', 'Android'],
-    github: 'https://github.com/youruser/kotlin-project',
-    website: 'https://your-kotlin-app.com'
+    link: '#'
   }
 ];
 
 const Projects = () => {
   return (
     <section className="flex flex-col items-center justify-center px-6 lg:px-20 py-16 bg-white text-gray-900">
+      {/* Título animado */}
       <motion.div
         className="text-center mb-12"
         initial={{ opacity: 0, y: 50 }}
@@ -79,6 +74,7 @@ const Projects = () => {
         <p className="text-lg text-gray-600">Here's a selection of my recent work</p>
       </motion.div>
 
+      {/* Grid de proyectos con animación por tarjeta */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl">
         {projects.map((project, index) => (
           <motion.div
@@ -108,30 +104,12 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <div className="mt-4 flex gap-4">
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-black text-lg"
-                    aria-label="GitHub"
-                  >
-                    <FiGithub />
-                  </a>
-                )}
-                {project.website && (
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-black text-lg"
-                    aria-label="Website"
-                  >
-                    <FiExternalLink />
-                  </a>
-                )}
-              </div>
+              <a
+                href={project.link}
+                className="mt-4 inline-flex items-center justify-center border border-gray-300 bg-white text-black text-sm font-medium px-4 py-2 rounded hover:bg-gray-600 hover:text-white transition"
+              >
+                View Project <FiExternalLink className="ml-2" />
+              </a>
             </div>
           </motion.div>
         ))}
